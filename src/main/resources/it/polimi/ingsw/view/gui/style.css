@@ -1,0 +1,62 @@
+/*GAME SCENE*/
+
+.background-img {
+    -fx-background-image: url('../../../../../assets/misc/sfondo-parquet.jpg');
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+.goals {
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 10, 0, 0, 0);
+}
+
+.top-bar {
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+    -fx-background-radius: 5;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+/*OTHER SCENE*/
+
+.back{
+    -fx-background-image: url('../../../../../assets/misc/back.jpg');
+    -fx-background-size: cover; 
+    -fx-background-repeat: no-repeat;
+}
+
+.start-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-border-color: rgb(240, 220, 170);
+    -fx-border-width: 1px;
+    -fx-text-fill: rgb(240, 220, 170);
+}
+
+.start-button:hover {
+    -fx-background-color: rgba(240, 220, 170, 0.3);
+}
+
+.confirm-button {
+    -fx-background-color: #2196f3;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-border-color: #ffffff;
+    -fx-cursor: hand;
+}
+
+.confirm-button:hover {
+    -fx-background-color: #64b5f6;
+    -fx-text-fill: white;
+}
+
+.confirm-button:pressed {
+    -fx-background-color: #1976d2;
+    -fx-text-fill: white;
+}

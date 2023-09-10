@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CustomMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="background-img" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polimi.ingsw.view.gui.scenes.GameScene">
+   <center>
+      <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="LIVINGROOM">
+            <content>
+                  <TilePane alignment="CENTER">
+                     <children>
+                        <Group styleClass="goals">
+                           <children>
+                              <ImageView fitHeight="515.0" fitWidth="534.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../assets/misc/livingroom.png" />
+                                 </image>
+                              </ImageView>
+                              <GridPane fx:id="board" alignment="CENTER" layoutX="21.0" layoutY="21.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="470.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </GridPane>
+                              <ImageView fx:id="token" fitHeight="57.0" fitWidth="62.0" layoutX="415.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true" rotate="9.0">
+                                 <image>
+                                    <Image url="@../../../../../assets/Tokens/end-game.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Group>
+                     </children>
+                  </TilePane>
+            </content>
+          </Tab>
+          <Tab text="BOOKSHELF">
+            <content>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="17.0" prefWidth="780.0" spacing="57.0">
+                           <children>
+                              <Button fx:id="col0" mnemonicParsing="false" text="|" />
+                              <Button fx:id="col1" mnemonicParsing="false" text="|" />
+                              <Button fx:id="col2" mnemonicParsing="false" text="|" />
+                              <Button fx:id="col3" mnemonicParsing="false" text="|" />
+                              <Button fx:id="col4" mnemonicParsing="false" text="|" />
+                           </children>
+                        </HBox>
+                        <Group>
+                           <children>
+                              <GridPane fx:id="bookshelf" layoutX="60.0" layoutY="34.0" prefHeight="379.0" prefWidth="359.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="77.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="78.0" minWidth="10.0" prefWidth="73.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="81.0" minWidth="10.0" prefWidth="77.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="74.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="89.0" minWidth="10.0" prefWidth="60.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>   
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="58.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                       <image>
+                                          <Image url="@../../../../../assets/Cards/books1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </GridPane>
+                              <ImageView fitHeight="491.0" fitWidth="476.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../assets/misc/bookshelf.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Group>
+                     </children>
+                  </VBox>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="top-bar" BorderPane.alignment="CENTER">
+        <items>
+            <MenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="CHAT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <items>
+                  <CustomMenuItem hideOnClick="false" mnemonicParsing="false" text="Unspecified Action">
+                     <content>
+                        <TextArea fx:id="chat" editable="false" prefHeight="200.0" prefWidth="200.0" />
+                     </content>
+                  </CustomMenuItem>
+                  <CustomMenuItem hideOnClick="false" mnemonicParsing="false" text="Unspecified Action">
+                     <content>
+                        <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="200.0" spacing="5.0">
+                           <children>
+                              <TextField fx:id="writeChat" />
+                              <Button mnemonicParsing="false" onAction="#sendChat" text="SEND" />
+                           </children>
+                        </HBox>
+                     </content>
+                  </CustomMenuItem>
+               </items>
+            </MenuButton>
+          <Button fx:id="confirm" alignment="CENTER" mnemonicParsing="false" onAction="#onConfirmClick" styleClass="confirm-button" text="CONFIRM">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label fx:id="feedback" text="Label" visible="false">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+        </items>
+      </ToolBar>
+   </top>
+   <right>
+      <VBox alignment="CENTER" minWidth="-Infinity" prefHeight="560.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Group styleClass="goals">
+               <children>
+                  <ImageView fx:id="cg1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../assets/CommonGoals/cg1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cg1Score" fitHeight="76.0" fitWidth="65.0" layoutX="113.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" rotate="-8.0">
+                     <image>
+                        <Image url="@../../../../../assets/Tokens/scoring-8.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group styleClass="goals">
+               <children>
+                  <ImageView fx:id="cg2" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../assets/CommonGoals/cg2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="cg2Score" fitHeight="76.0" fitWidth="65.0" layoutX="115.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" rotate="-8.0">
+                     <image>
+                        <Image url="@../../../../../assets/Tokens/scoring-8.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <ImageView fx:id="pg" fitHeight="228.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true" styleClass="goals">
+               <image>
+                  <Image url="@../../../../../assets/PrivateGoals/pg1.png" />
+               </image>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets right="60.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+</BorderPane>
