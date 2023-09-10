@@ -3,7 +3,8 @@
 ## Introduzione
 La relazione completa di immagini si trova nella sezione `Documentation`.
 Nei prossimi paragrafi sono descritte le principali caratteristiche, le scelte 
-progettuali ed implementative della realizzazione del gioco da tavolo MyShelfie.
+progettuali ed implementative della realizzazione del gioco da tavolo MyShelfie. 
+Sviluppato assieme a Maurizio Tirabassi e Vincenzo Zappia.
 
 ## Gioco
 Caratteristiche principali della scelta delle entità di gioco:
